@@ -245,7 +245,7 @@ body {
 		margin: 0;
 		float: left;
 		list-style: none;
-		padding: 0 0 20px 20px;
+		padding: 10px 0 20px 20px;
 
 		li {
 			color: #8b8b8b;
@@ -622,6 +622,208 @@ body {
 	}
 }
 
+.courses-title {
+	padding-left: 170px;
+}
+
+.courses {
+	padding-top: 210px;
+}
+
+.courses-list {
+	margin: 0;
+	padding: 0 0 0 208px;
+	list-style: none;
+
+	li {
+		margin-bottom: 77px;
+	}
+
+	.course-img {
+		float: left;
+		width: 147px;
+		margin-right: 18px;
+		border: 1px solid #bebebe;
+		.box-shadow(0px 3px 5px 0px rgba(0, 0, 0, 0.35));
+	}
+
+	.course-text {
+		float: left;
+		width: 220px;
+	}
+
+	.course-title {
+		a {
+			color: #272727;
+			text-decoration: none;
+		}
+	}
+
+	.course-activation-date {
+		color: #adaeae;
+		margin-bottom: 15px;
+	}
+
+	.course-date {
+		color: #343536;
+		line-height: 20px;
+		font-style: italic;
+		margin-bottom: 5px;
+
+		span {
+			display: block;
+			font-style: normal;
+		}
+	}
+
+	.course-goto {
+		color: #f2570a;
+		text-decoration: underline;
+	}
+}
+
+.learning-block {
+	margin: 10px 0 0 0;
+	padding: 0;
+	width: 100%;
+	display: table;
+	list-style: none;
+
+	> li {
+		width: 400px;
+		display: table-cell;
+
+		&:first-child {
+			border-right: 1px solid #d0dcf2;
+			border-left: 1px solid #f2f2f2;
+		}
+
+		&:last-child {
+			border-left: 1px solid #d0dcf2;
+			border-right: 1px solid #f2f2f2;
+		}
+
+	}
+
+	.learning-title {
+		color: #fff;
+		padding: 10px;
+		font-size: 20px;
+		line-height: 28px;
+		text-align: center;
+		background: #4d7dd2;
+	}
+
+	.learning-list {
+		margin: 0;
+		padding: 20px 8px;
+		list-style: none;
+
+		li {
+			font-size: 12px;
+			line-height: 17px;
+			margin-bottom: 10px;
+			opacity: .4;
+
+			&.active {
+				opacity: 1;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			a {
+				color: #3c3c3c;
+				position: relative;
+				padding-left: 10px;
+				text-decoration: none;
+
+				&:before {
+					top: 8px;
+					left: 0;
+					width: 4px;
+					height: 4px;
+					content: "";
+					position: absolute;
+					background: #bebebe;
+					.border-radius(2px);
+				}
+
+				&:hover {
+					color: #ff7800;
+					text-decoration: underline;
+
+					&:before {
+						background: #ff7800;
+					}
+				}
+			}
+		}
+	}
+}
+
+.test-list {
+	width: 800px;
+	margin: 0 0 30px 190px;
+
+	h3 {
+		color: #3b3c3c;
+		font-size: 23px;
+		line-height: 25px;
+		font-style: normal;
+		margin-bottom: 15px;
+	}
+
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	li {
+		width: 100%;
+		display: table;
+
+		span {
+			height: 51px;
+			padding: 5px 0 5px 55px;
+			display: table-cell;
+			position: relative;
+			vertical-align: middle;
+			background: url("../img/test-list-divider.png") 0 100% no-repeat;
+		}
+
+		a {
+			color: #434343;
+			font-size: 14px;
+			line-height: 20px;
+			display: inline-block;
+			text-decoration: none;
+
+			&:before {
+				top: 6px;
+				left: 3px;
+				width: 36px;
+				height: 36px;
+				content: " ";
+				position: absolute;
+				background: url("../img/icon-test.jpg") 0 0 no-repeat;
+			}
+
+			&:hover {
+				color: #ea4d00;
+				text-decoration: underline;
+
+				&:before {
+					background-position: 0 -36px;
+				}
+			}
+		}
+	}
+}
+
 /* Forms */
 
 .teacher-form {
@@ -874,7 +1076,6 @@ h2 {
 	font-size: 30px;
 	line-height: 35px;
 	font-style: italic;
-	margin-bottom: 10px;
 }
 
 h3 {
@@ -884,13 +1085,25 @@ h3 {
 	font-style: italic;
 }
 
+h4 {
+	color: #233f75;
+	font-size: 18px;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+
 p {
-	padding: 0;
-	margin: 0 0 20px 0;
+	margin: 0;
+	padding: 0 0 20px 0;
 }
 
 a {
+	color: #f2570a;
+	text-decoration: underline;
 
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 strong {
