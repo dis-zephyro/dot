@@ -69,6 +69,8 @@
 
 .clearfix:before,
 .clearfix:after,
+.form-group:after,
+.form-group:before,
 .container:before,
 .container:after {
 	content: " "; /* 1 */
@@ -76,11 +78,13 @@
 }
 
 .clearfix:after,
+.form-group:after,
 .container:after {
 	clear: both;
 }
 
 .clearfix,
+.form-group,
 .container {
 	*zoom: 1;
 }

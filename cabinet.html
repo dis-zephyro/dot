@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Школа бортпроводников - Курсы</title>
+        <title>Школа бортпроводников - Личный кабинет</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=1900">
 
@@ -48,11 +48,11 @@
             <div class="page-title">
                 <div class="container">
                     <div class="courses-title">
-                        <h1>Курсы</h1>
+                        <h1>Личный кабинет</h1>
                         <div class="clearfix">
                             <ul class="breadcrumbs">
                                 <li><a href="#">Главная</a></li>
-                                <li>Курсы</li>
+                                <li>Личный кабинет</li>
                             </ul>
                         </div>
                     </div>
@@ -61,45 +61,57 @@
         </header>
         <section class="courses">
             <div class="container">
-                <ul class="courses-list">
-                    <li class="clearfix">
-                        <div class="course-img">
-                            <img class="img-responsive" src="images/courses-image.jpg" alt="">
-                        </div>
-                        <div class="course-text">
-                            <h4 class="course-title"><a href="#">Посадка-Высадка (3)</a></h4>
-                            <div class="course-activation-date">Активирован до 2016-03-20</div>
-                            <div class="course-date">Экзамен будет проходить в виде Тестирования:<span>2014-02-20 22:05:00</span></div>
-                            <a class="course-goto" href="#">Перейти</a>
-                        </div>
-                    </li>
+                <div class="profile">
+                    <h3>Имечко Фамилия</h3>
+                    <form class="form">
+                        <div class="clearfix">
+                            <div class="profile-text">
+                                <div class="form-group">
+                                    <label>Ваше имя:</label>
+                                    <input type="text" class="form-control" placeholder="Имечко">
+                                </div>
+                                <div class="form-group">
+                                    <label>Ваша фамилия:</label>
+                                    <input type="text" class="form-control" placeholder="Фамилия">
+                                </div>
+                                <div class="form-group">
+                                    <label>Телефон:</label>
+                                    <input type="text" class="form-control" placeholder="+7 (980) 900-00-00">
+                                </div>
+                                <div class="form-group">
+                                    <label>Рабочий телефон:</label>
+                                    <input type="text" class="form-control" placeholder="+7 (980) 900-00-00">
+                                </div>
+                                <div class="form-group">
+                                    <label>Серия и номер паспорта:</label>
+                                    <input type="text" class="form-control" placeholder="4505 545899">
+                                </div>
+                                <div class="form-group">
+                                    <label>Кем и когда выдан:</label>
+                                    <input type="text" class="form-control" placeholder="ОВД района Кунцево">
+                                </div>
+                            </div>
 
-                    <li class="clearfix">
-                        <div class="course-img">
-                            <img class="img-responsive" src="images/courses-image.jpg" alt="">
+                            <div class="profile-image">
+                                <div class="profile-avatar">
+                                    <img class="img-responsive" src="images/user-profile-avatar.jpg" alt="">
+                                    <span class="profile-avatar-inner"></span>
+                                </div>
+                                <label>Изображение:</label>
+                                <div class="fileform">
+                                    <div class="btn-gray">Прикрепить файл</div>
+                                    <div class="fileformlabel" id="fileformlabel">
+                                        Файл не выбран<br/>
+                                    </div>
+                                    <input type="file" name="upload" class="upload" onchange="getName(this.value);" />
+                                </div>
+                            </div>
                         </div>
-                        <div class="course-text">
-                            <h4 class="course-title"><a href="#">Посадка-Высадка (3)</a></h4>
-                            <div class="course-activation-date">Активирован до 2016-03-20</div>
-                            <div class="course-legend">Экзамен будет проходить в виде Тестирования:</div>
-                            <div class="course-date">2014-02-20 22:05:00</div>
-                            <a class="course-goto" href="#">Перейти</a>
-                        </div>
-                    </li>
+                            <button type="submit" class="btn-blue btn-xl">Сохранить</button>
+                    </form>
 
-                    <li class="clearfix">
-                        <div class="course-img">
-                            <img class="img-responsive" src="images/courses-image.jpg" alt="">
-                        </div>
-                        <div class="course-text">
-                            <h4 class="course-title"><a href="#">Посадка-Высадка (3)</a></h4>
-                            <div class="course-activation-date">Активирован до 2016-03-20</div>
-                            <div class="course-legend">Экзамен будет проходить в виде Тестирования:</div>
-                            <div class="course-date">2014-02-20 22:05:00</div>
-                            <a class="course-goto" href="#">Перейти</a>
-                        </div>
-                    </li>
-                </ul>
+                </div>
+                <div class="divider"></div>
             </div>
         </section>
 
