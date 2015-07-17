@@ -1,0 +1,213 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Школа бортпроводников - Начать тестирование</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=1900">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!--link rel="stylesheet/less" href="less/main.less">
+        <script src="js/vendor/less.min.js"></script-->
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <!--[if gte IE 9]>
+            <link rel="stylesheet" href="css/ie.css">
+        <![endif]-->
+    </head>
+    
+    <body>
+        <header class="header">
+            <div class="container">
+                <a href="#" class="logo ir">Школа бортпроводников</a>
+                <span class="btn-exit"><a href="#">выход</a></span>
+                <a href="#teacher-form" class="teacher-link">Помощь учителя</a>
+                <a href="#help-form" class="support-link">Служба спрасения</a>
+            </div>
+            <nav class="topnav">
+                <div class="container">
+                    <ul class="clearfix">
+                        <li class="active"><a href="#">личный кабинет</a></li>
+                        <li><a href="#">пройти обучение</a></li>
+                        <li><a href="#">проверить знания</a></li>
+                        <li><a href="#">
+                            сообщения
+                            <span class="num">2</span>
+                        </a></li>
+                        <li><a href="#">мои итоги</a></li>
+                        <li><a href="#">мои аттестаты</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="page-title">
+                <div class="container">
+                    <h1>Идет тестирование</h1>
+                    <h2>Тест «Тема 1: Правовое обеспечение охраны труда. Промежуточное тестирование.»</h2>
+                </div>
+            </div>
+        </header>
+        <section class="test">
+            <div class="container">
+                <div class="quest">
+                    Вопрос 1 из 26. Несмотря на проводимую работу и значительные финансовые затраты, связанные с улучшением условий и охраны труда, на многих предприятиях имеют место несчастные случаи, а увольнение работников нередко происходит из-за их неудовлетворенности условиями труда. Что может быть главной причиной этих негативных явлений?
+                </div>
+                <!-- Сножественный выбор -->
+                <div class="answer">
+                    <div class="answer-title">Выберите несколько верных вариантов ответа на вапрос:</div>
+                    <form class="form">
+                        <div class="answer-form-inner">
+                            <div class="checkbox">
+                                <input id="check1" type="checkbox" name="check" value="check1">
+                                <label for="check1">Многообразие видов технологий, травмоопасного оборудования</label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="check2" type="checkbox" name="check" value="check2">
+                                <label for="check2">Вероятнее всего, та, что указанная работа не носит системного характера, не опирается на данные всестороннего анализа условий труда и эффективности проводимых мероприятий</label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="check3" type="checkbox" name="check" value="check3">
+                                <label for="check3">Главная причина заключается в слабом участии в указанной работе всего коллектива работников</label>
+                            </div>
+                        </div>
+                        <button class="btn-orange">Принять ответ</button>
+                    </form>
+                </div>
+
+                <!-- Одиночный выбор -->
+                <div class="answer">
+                    <div class="answer-title">Выберите один правильный ответ на вопрос:</div>
+                    <form class="form">
+                        <div class="answer-form-inner">
+                            <div class="radio">
+                                <input id="radio1" type="radio" name="radio" value="radio1">
+                                <label for="radio1">Многообразие видов технологий, травмоопасного оборудования</label>
+                            </div>
+                            <div class="radio">
+                                <input id="radio2" type="radio" name="radio" value="radio2">
+                                <label for="radio2">Вероятнее всего, та, что указанная работа не носит системного характера, не опирается на данные всестороннего анализа условий труда и эффективности проводимых мероприятий</label>
+                            </div>
+                            <div class="radio">
+                                <input id="radio3" type="radio" name="radio" value="radio3">
+                                <label for="radio3">Главная причина заключается в слабом участии в указанной работе всего коллектива работников</label>
+                            </div>
+                        </div>
+                        <button class="btn-orange">Принять ответ</button>
+                    </form>
+                </div>
+
+                <!-- Произвольный ответ -->
+                <div class="answer">
+                    <div class="answer-title">Ответьте на этот вопрос:</div>
+                    <form class="form">
+                        <div class="answer-form-inner">
+                            <textarea class="form-control" placeholder="Ответ..."></textarea>
+                        </div>
+                        <button class="btn-orange">Принять ответ</button>
+                    </form>
+                </div>
+
+                <!-- Поставьте по порядку : -->
+                <div class="answer">
+                    <div class="answer-title">Ответьте на этот вопрос:</div>
+                    <form class="form">
+                        <div class="answer-form-inner">
+                            <ul class="orange-marker three-col clearfix">
+                                <li>Несмотря на проводимую работу</li>
+                                <li>Значительные финансовые затраты</li>
+                                <li>Связанные с улучшением условий
+                                </li>
+                            </ul>
+                            <ul class="answer-input">
+                                <li>
+                                    <input class="form-control" type="text" placeholder="">
+                                </li>
+                                <li>
+                                    <input class="form-control" type="text" placeholder="">
+                                </li>
+                                <li>
+                                    <input class="form-control" type="text" placeholder="">
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn-orange">Принять ответ</button>
+                    </form>
+                </div>
+
+                <!-- Соотнесите вопросы с ответами : -->
+                <div class="answer">
+                    <div class="answer-title">Соотнесите вопросы с ответами:</div>
+                    <form class="form">
+                        <div class="answer-form-inner">
+                            <div class="row clearfix">
+                                <div class="col">
+                                    <ul class="orange-marker">
+                                        <li>Несмотря на проводимую работу и значительные финансовые затраты?</li>
+                                        <li>Связанные с улучшением условий и охраны труда?</li>
+                                        <li>Увольнение работников нередко происходит из-за их неудовлетворенности условиями труда?</li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul class="orange-marker">
+                                        <li>Связанные с улучшением условий и охраны труда?</li>
+                                        <li>Несмотря на проводимую работу и значительные финансовые затраты?</li>
+                                        <li>Увольнение работников нередко происходит из-за их неудовлетворенности условиями труда?</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-orange">Принять ответ</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="bg-bottom-left"></div>
+        <div class="bg-bottom-right"></div>
+
+        <!-- Форма вопроса учителю -->
+        <div class="hidden">
+            <div class="teacher-form" id="teacher-form">
+                <form class="form">
+                    <div class="form-title">Задай вопрос учителю</div>
+                    <div class="form-group clearfix">
+                        <label for="teacher-form-name" class="form-label">Тема:</label>
+                        <input type="text" class="form-control" id="teacher-form-name">
+                    </div>
+                    <textarea class="form-control" placeholder="Сообщение..."></textarea>
+                    <div class="text-right">
+                        <button class="btn-teacher-form">Отправить</button>
+                    </div>
+                </form>
+                <span class="btn-close ir">Закрыть</span>
+            </div>
+        </div>
+
+        <!-- Форма вопроса техподдержке -->
+        <div class="hidden">
+            <div class="help-form" id="help-form">
+                <div class="form-title">Задай вопрос в тех. поддержку</div>
+                <form class="form">
+                    <div class="form-group clearfix">
+                        <label for="help-form-name" class="form-label">Тема:</label>
+                        <input type="text" class="form-control" id="help-form-name">
+                    </div>
+                    <textarea class="form-control" placeholder="Сообщение..."></textarea>
+                    <div class="text-center">
+                        <button class="btn-help-form">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

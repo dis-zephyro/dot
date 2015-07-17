@@ -861,6 +861,9 @@ body {
   -moz-box-shadow: inset 0px 1px 7px 0px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 1px 7px 0px rgba(0, 0, 0, 0.3);
 }
+.profile .profile-image label {
+  margin-bottom: 18px;
+}
 .profile .fileform {
   height: 32px;
   cursor: pointer;
@@ -897,6 +900,160 @@ body {
 .profile .btn-blue {
   margin: 35px 0 0 350px;
 }
+.profile .col-image {
+  float: left;
+  width: 225px;
+}
+.profile .col-image .user-avatar {
+  width: 203px;
+  position: relative;
+  margin-bottom: 23px;
+  border: 1px solid #cbcccc;
+}
+.profile .col-image .user-avatar .user-avatar-inner {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  position: absolute;
+  -webkit-box-shadow: inset 0px 1px 7px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 1px 7px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 7px 0px rgba(0, 0, 0, 0.3);
+}
+.profile .col-image .btn-blue {
+  margin: 0;
+}
+.profile .col-text {
+  float: left;
+  width: 380px;
+  padding-right: 20px;
+}
+.profile .col-text ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.profile .col-text li {
+  color: #3b3c3c;
+  font-size: 19px;
+  line-height: 26px;
+  padding: 7px 0;
+}
+.profile .col-text li:first-child {
+  color: #ff6600;
+  font-weight: 600;
+  font-style: italic;
+}
+.test {
+  padding-top: 230px;
+}
+.test .quest {
+  color: #434343;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 15px 20px;
+  background: #ededed;
+  margin-bottom: 25px;
+}
+.test .answer {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+.test .answer .answer-title {
+  color: #bbbbbb;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.test .answer .answer-form-inner {
+  padding-left: 30px;
+  padding-right: 50px;
+  margin-bottom: 50px;
+}
+.test .answer textarea {
+  padding: 12px;
+  height: 185px;
+}
+.test .answer .form-control {
+  width: 100%;
+  outline: none;
+  color: #434343;
+  display: block;
+  font-size: 18px;
+  background: #fff;
+  line-height: 30px;
+  padding: 1px 12px;
+  border: 1px solid #d4d4d4;
+  -webkit-box-shadow: inset 0px 0px 13px 0px rgba(122, 193, 255, 0.3);
+  -moz-box-shadow: inset 0px 0px 13px 0px rgba(122, 193, 255, 0.3);
+  box-shadow: inset 0px 0px 13px 0px rgba(122, 193, 255, 0.3);
+}
+.test .answer .answer-input {
+  margin: 0;
+  padding: 0;
+  width: 545px;
+  list-style: none;
+  counter-reset: li;
+}
+.test .answer .answer-input li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 14px;
+}
+.test .answer .answer-input li:before {
+  top: 0;
+  left: 0;
+  line-height: 36px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: left;
+  position: absolute;
+  color: #fa7923;
+  content: counter(li);
+  counter-increment: li;
+}
+.test .answer .row {
+  margin-left: -30px;
+  position: relative;
+}
+.test .answer .row .col {
+  width: 50%;
+  float: left;
+  padding: 0 30px;
+}
+.test .btn-orange {
+  margin-left: 30px;
+}
+.test .three-col li {
+  float: left;
+  width: 33.33%;
+}
+.test .orange-marker {
+  padding: 0;
+  list-style: none;
+  margin: 0 0 15px 0;
+}
+.test .orange-marker li {
+  font-size: 18px;
+  line-height: 30px;
+  padding-bottom: 10px;
+  position: relative;
+  padding-left: 18px;
+  padding-right: 15px;
+}
+.test .orange-marker li:before {
+  top: 10px;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  content: ' ';
+  position: absolute;
+  background: #ff8400;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
 .divider {
   width: 100%;
   height: 1px;
@@ -904,6 +1061,70 @@ body {
   background: url("../img/divider.png") top center no-repeat;
 }
 /* Forms */
+.checkbox {
+  margin-bottom: 15px;
+}
+.checkbox input[type=checkbox] {
+  display: none;
+}
+.checkbox label {
+  color: #434343;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  position: relative;
+  padding-left: 35px;
+  display: inline-block;
+}
+.checkbox label:before {
+  left: 0;
+  top: 4px;
+  content: "";
+  width: 22px;
+  height: 22px;
+  padding-top: 1px;
+  padding-left: 1px;
+  margin-right: 10px;
+  position: absolute;
+  display: inline-block;
+  background: url("../img/icon-form-item.png") 0 0 no-repeat;
+}
+.checkbox input[type=checkbox]:checked + label:before {
+  background: url("../img/icon-form-item.png") 0 -23px no-repeat;
+}
+.radio {
+  margin-bottom: 15px;
+}
+.radio label {
+  color: #434343;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  position: relative;
+  padding-left: 35px;
+  display: inline-block;
+}
+.radio label:before {
+  left: 0;
+  top: 4px;
+  content: "";
+  width: 22px;
+  height: 22px;
+  padding-top: 1px;
+  padding-left: 1px;
+  margin-right: 10px;
+  position: absolute;
+  display: inline-block;
+  background: url("../img/icon-form-item.png") -23px 0 no-repeat;
+}
+.radio input[type=radio] {
+  display: none;
+}
+.radio input[type=radio]:checked + label:before {
+  background: url("../img/icon-form-item.png") -23px -23px no-repeat;
+}
 .teacher-form {
   width: 614px;
   height: 416px;
@@ -1146,10 +1367,75 @@ body {
   top: 1px;
   position: relative;
 }
+.btn-blue.btn-medium {
+  font-size: 18px;
+  padding: 4px 25px;
+  line-height: 26px;
+}
 .btn-blue.btn-xl {
   font-size: 22px;
   padding: 5px 45px;
   line-height: 27px;
+}
+.btn-orange {
+  margin: 0;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px 35px;
+  line-height: 24px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dc985e+0,d8812e+100 */
+  background: #dc985e;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RjOTg1ZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkODgxMmUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #dc985e 0%, #d8812e 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dc985e), color-stop(100%, #d8812e));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #dc985e 0%, #d8812e 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #dc985e 0%, #d8812e 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #dc985e 0%, #d8812e 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #dc985e 0%, #d8812e 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc985e', endColorstr='#d8812e', GradientType=0);
+  /* IE6-8 */
+}
+.btn-orange:hover {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9b9b9b+0,757575+100 */
+  background: #9b9b9b;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzliOWI5YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3NTc1NzUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #9b9b9b 0%, #757575 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9b9b9b), color-stop(100%, #757575));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #9b9b9b 0%, #757575 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #9b9b9b 0%, #757575 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #9b9b9b 0%, #757575 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #9b9b9b 0%, #757575 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9b9b9b', endColorstr='#757575', GradientType=0);
+  /* IE6-8 */
+}
+.btn-orange:active {
+  top: 1px;
+  position: relative;
 }
 /* Typography
    ========================= */
