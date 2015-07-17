@@ -972,8 +972,9 @@ body {
   margin-bottom: 50px;
 }
 .test .answer textarea {
-  padding: 12px;
+  padding: 14px 12px;
   height: 185px;
+  line-height: 26px;
 }
 .test .answer .form-control {
   width: 100%;
@@ -982,8 +983,8 @@ body {
   display: block;
   font-size: 18px;
   background: #fff;
-  line-height: 30px;
-  padding: 1px 12px;
+  line-height: 26px;
+  padding: 4px 12px;
   border: 1px solid #d4d4d4;
   -webkit-box-shadow: inset 0px 0px 13px 0px rgba(122, 193, 255, 0.3);
   -moz-box-shadow: inset 0px 0px 13px 0px rgba(122, 193, 255, 0.3);
