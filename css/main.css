@@ -91,7 +91,7 @@ textarea {
 html {
   font-size: 14px;
   min-height: 100%;
-  min-width: 1900px;
+  min-width: 1350px;
   line-height: 1.357;
   position: relative;
   overflow-x: hidden;
@@ -1451,8 +1451,17 @@ body {
   top: 1px;
   position: relative;
 }
+@media (max-width: 1370px) {
+  .container {
+    padding: 0 15px;
+    width: 1330px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+  }
+}
 /* Typography
-   ========================= */
+	   ========================= */
 h1,
 h2,
 h3,
