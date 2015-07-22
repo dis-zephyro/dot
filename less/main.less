@@ -78,6 +78,10 @@ section {
 
 	}
 
+	%.header-forum {
+	height: 210px;
+}
+
 	.header0 {
 		width: 100%;
 		position: relative;
@@ -121,6 +125,21 @@ section {
 			}
 		}
 	}
+
+	.btn-register {
+		top: 100px;
+		right: 45px;
+		z-index: 30;
+		color: #6a8297;
+		font-size: 18px;
+		line-height: 20px;
+		position: absolute;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 
 .topnav {
@@ -138,8 +157,9 @@ section {
 
 	li {
 		height: 65px;
-		padding: 0 4px;
+		padding: 0 2px;
 		text-align: center;
+		position: relative;
 		display: table-cell;
 		vertical-align: middle;
 
@@ -200,6 +220,132 @@ section {
 			background: #ff7f00;
 			border: 3px solid #fff;
 			.border-radius(50%);
+		}
+	}
+
+	&.topnav-icon {
+
+		li {
+
+			a {
+				padding-left: 35px;
+				padding-right: 10px;
+
+				&:before {
+					top: 20px;
+					left: 8px;
+					width: 25px;
+					height: 25px;
+					content: " ";
+					position: absolute;
+					background: url("../img/topnav-icon.png") 0 0 no-repeat;
+				}
+			}
+
+			&.active {
+
+				&.item1 a:before {
+					background-position: 0 -25px;
+				}
+
+				&.item2 a:before {
+					background-position: -134px -25px;
+				}
+
+				&.item3 a:before {
+					background-position: -404px -25px;
+				}
+
+				&.item4 a:before {
+					background-position: -665px -25px;
+				}
+
+				&.item5 a:before {
+					background-position: -944px -25px;
+				}
+
+				&.item6 a:before {
+					background-position: -1077px -25px;
+				}
+			}
+
+			&.item1 a {
+
+				&:before {
+					background: url("../img/topnav-icon.png") 0 0 no-repeat;
+				}
+
+				&:hover {
+					&:before {
+						background-position: 0 -25px;
+					}
+				}
+			}
+
+			&.item2 a {
+
+				&:before {
+					background-position: -134px 0;
+				}
+
+				&:hover {
+					&:before {
+						background-position: -134px -25px;
+					}
+				}
+			}
+
+			&.item3 a {
+
+				&:before {
+					background-position: -404px 0;
+				}
+
+				&:hover {
+					&:before {
+						background-position: -404px -25px;
+					}
+				}
+			}
+
+			&.item4 a {
+
+				&:before {
+					background-position: -665px 0;
+				}
+
+				&:hover {
+					&:before {
+						background-position: -665px -25px;
+					}
+				}
+			}
+
+			&.item5 a {
+
+				&:before {
+					background-position: -944px 0;
+				}
+
+				&:hover {
+					&:before {
+						background-position: -944px -25px;
+					}
+				}
+			}
+
+			&.item6 a {
+
+				&:before {
+					background-position: -1077px 0;
+				}
+
+				&:hover {
+					&:before {
+						background-position: -1077px -25px;
+					}
+				}
+			}
 		}
 	}
 }
@@ -301,6 +447,32 @@ section {
 				content: "";
 				position: absolute;
 				background: url("../img/materials-source-bg.png") 0 0 no-repeat;
+			}
+		}
+	}
+
+	.hello {
+		color: #648ed6;
+		font-size: 15px;
+		line-height: 20px;
+		text-align: right;
+		padding-top: 15px;
+		padding-right: 20px;
+
+		span {
+			padding-left: 21px;
+			position: relative;
+			display: inline-block;
+
+			&:before {
+				top: 5px;
+				left: 0;
+				width: 8px;
+				height: 8px;
+				content: " ";
+				position: absolute;
+				border: 3px solid #648ed6;
+				.border-radius(50%);
 			}
 		}
 	}
@@ -1110,13 +1282,17 @@ section {
 	}
 }
 
+.forum {
+	padding-top: 212px;
+}
+
+
 .divider {
 	width: 100%;
 	height: 1px;
 	margin-bottom: 30px;
 	background: url("../img/divider.png") top center no-repeat;
 }
-
 
 .teacher-link {
 	top: 180px;

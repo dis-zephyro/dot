@@ -176,6 +176,19 @@ section {
   color: #ff6600;
   background-position: 0 -82px;
 }
+.header .btn-register {
+  top: 100px;
+  right: 45px;
+  z-index: 30;
+  color: #6a8297;
+  font-size: 18px;
+  line-height: 20px;
+  position: absolute;
+  text-decoration: none;
+}
+.header .btn-register:hover {
+  text-decoration: underline;
+}
 .topnav {
   width: 100%;
   height: 66px;
@@ -190,8 +203,9 @@ section {
 }
 .topnav li {
   height: 65px;
-  padding: 0 4px;
+  padding: 0 2px;
   text-align: center;
+  position: relative;
   display: table-cell;
   vertical-align: middle;
 }
@@ -268,6 +282,73 @@ section {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+}
+.topnav.topnav-icon li a {
+  padding-left: 35px;
+  padding-right: 10px;
+}
+.topnav.topnav-icon li a:before {
+  top: 20px;
+  left: 8px;
+  width: 25px;
+  height: 25px;
+  content: " ";
+  position: absolute;
+  background: url("../img/topnav-icon.png") 0 0 no-repeat;
+}
+.topnav.topnav-icon li.active.item1 a:before {
+  background-position: 0 -25px;
+}
+.topnav.topnav-icon li.active.item2 a:before {
+  background-position: -134px -25px;
+}
+.topnav.topnav-icon li.active.item3 a:before {
+  background-position: -404px -25px;
+}
+.topnav.topnav-icon li.active.item4 a:before {
+  background-position: -665px -25px;
+}
+.topnav.topnav-icon li.active.item5 a:before {
+  background-position: -944px -25px;
+}
+.topnav.topnav-icon li.active.item6 a:before {
+  background-position: -1077px -25px;
+}
+.topnav.topnav-icon li.item1 a:before {
+  background: url("../img/topnav-icon.png") 0 0 no-repeat;
+}
+.topnav.topnav-icon li.item1 a:hover:before {
+  background-position: 0 -25px;
+}
+.topnav.topnav-icon li.item2 a:before {
+  background-position: -134px 0;
+}
+.topnav.topnav-icon li.item2 a:hover:before {
+  background-position: -134px -25px;
+}
+.topnav.topnav-icon li.item3 a:before {
+  background-position: -404px 0;
+}
+.topnav.topnav-icon li.item3 a:hover:before {
+  background-position: -404px -25px;
+}
+.topnav.topnav-icon li.item4 a:before {
+  background-position: -665px 0;
+}
+.topnav.topnav-icon li.item4 a:hover:before {
+  background-position: -665px -25px;
+}
+.topnav.topnav-icon li.item5 a:before {
+  background-position: -944px 0;
+}
+.topnav.topnav-icon li.item5 a:hover:before {
+  background-position: -944px -25px;
+}
+.topnav.topnav-icon li.item6 a:before {
+  background-position: -1077px 0;
+}
+.topnav.topnav-icon li.item6 a:hover:before {
+  background-position: -1077px -25px;
 }
 .page-title {
   padding-bottom: 10px;
@@ -359,6 +440,30 @@ section {
   content: "";
   position: absolute;
   background: url("../img/materials-source-bg.png") 0 0 no-repeat;
+}
+.page-title .hello {
+  color: #648ed6;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: right;
+  padding-right: 20px;
+}
+.page-title .hello span {
+  padding-left: 21px;
+  position: relative;
+  display: inline-block;
+}
+.page-title .hello span:before {
+  top: 5px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  content: " ";
+  position: absolute;
+  border: 3px solid #648ed6;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
 .messages {
   padding-top: 136px;
@@ -1043,6 +1148,9 @@ section {
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
+.forum {
+  padding-top: 212px;
+}
 .divider {
   width: 100%;
   height: 1px;
@@ -1559,6 +1667,13 @@ nav ul {
   }
   .topnav a {
     font-size: 16px;
+  }
+  .topnav.topnav-icon li a {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .topnav.topnav-icon li a:before {
+    display: none;
   }
 }
 @media (max-width: 1370px) {
