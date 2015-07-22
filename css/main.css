@@ -91,19 +91,23 @@ textarea {
 html {
   font-size: 14px;
   min-height: 100%;
-  min-width: 1350px;
+  min-width: 1270px;
   line-height: 1.357;
   position: relative;
   overflow-x: hidden;
   font-family: 'Open Sans', sans-serif;
+  background: url("../img/footer_bg.jpg") center bottom no-repeat;
 }
 body {
   background: url("../img/bg.jpg") top left no-repeat;
   background-attachment: fixed;
 }
+section {
+  z-index: 10;
+}
 .container {
-  padding: 0 330px;
-  width: 1860px;
+  padding: 0 100px 0 15px;
+  width: 1330px;
   margin-right: auto;
   margin-left: auto;
   position: relative;
@@ -136,6 +140,10 @@ body {
 .header.header-message {
   height: 136px;
 }
+.header .header0 {
+  width: 100%;
+  position: relative;
+}
 .header .logo {
   top: 8px;
   left: 10px;
@@ -155,10 +163,10 @@ body {
   position: absolute;
   padding-top: 34px;
   padding-left: 20px;
-  background: url("../img/btn-exit.png") 0 0 no-repeat;
+  background: url("../img/btn-exit.png") 0 -79px no-repeat;
 }
 .header .btn-exit a {
-  color: #7d8790;
+  color: #606060;
   font-size: 17px;
   line-height: 20px;
   padding-left: 20px;
@@ -171,43 +179,10 @@ body {
   color: #ff6600;
   background-position: 0 -82px;
 }
-.header .teacher-link {
-  top: 300px;
-  right: 180px;
-  width: 130px;
-  color: #444444;
-  font-size: 14px;
-  font-weight: 600;
-  padding-top: 102px;
-  font-style: italic;
-  position: absolute;
-  text-align: center;
-  text-decoration: none;
-  background: url("../img/icon-teacher.png") 50% 0 no-repeat;
-}
-.header .teacher-link:hover {
-  background-position: 50% -150px;
-}
-.header .support-link {
-  top: 450px;
-  right: 180px;
-  width: 130px;
-  color: #444444;
-  font-size: 14px;
-  font-weight: 600;
-  font-style: italic;
-  padding-top: 112px;
-  position: absolute;
-  text-align: center;
-  text-decoration: none;
-  background: url("../img/icon-help.png") 50% 0 no-repeat;
-}
-.header .support-link:hover {
-  background-position: 50% -200px;
-}
 .topnav {
   width: 100%;
   height: 66px;
+  position: relative;
   margin: 0 auto 30px auto;
   background: url("../img/topnav_bg.png") top left no-repeat;
 }
@@ -392,6 +367,7 @@ body {
   padding-top: 136px;
 }
 .messages .message-theme {
+  z-index: 10;
   width: 359px;
   top: 136px;
   bottom: 30px;
@@ -504,6 +480,7 @@ body {
   margin-bottom: 9px;
 }
 .messages .message-form {
+  z-index: 10;
   width: 840px;
   bottom: 0;
   background: #fff;
@@ -547,7 +524,6 @@ body {
   z-index: 100;
   width: 300px;
   top: 236px;
-  left: 50px;
   bottom: 55px;
   position: fixed;
   padding-left: 8px;
@@ -622,6 +598,7 @@ body {
   text-decoration: underline;
 }
 .lesson .lesson-text {
+  margin-left: 302px;
   padding: 25px 80px;
   background: #fbfbfb;
   border: 1px solid #eeefef;
@@ -1074,6 +1051,38 @@ body {
   margin-bottom: 30px;
   background: url("../img/divider.png") top center no-repeat;
 }
+.teacher-link {
+  top: 180px;
+  width: 130px;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: italic;
+  position: fixed;
+  text-align: center;
+  text-decoration: none;
+  padding: 102px 30px 0 30px;
+  background: url("../img/icon-teacher.png") 50% 0 no-repeat;
+}
+.teacher-link:hover {
+  background-position: 50% -150px;
+}
+.support-link {
+  top: 350px;
+  width: 130px;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: italic;
+  position: fixed;
+  text-align: center;
+  text-decoration: none;
+  padding: 112px 30px 0 30px;
+  background: url("../img/icon-help.png") 50% 0 no-repeat;
+}
+.support-link:hover {
+  background-position: 50% -200px;
+}
 /* Forms */
 .checkbox {
   margin-bottom: 15px;
@@ -1451,15 +1460,6 @@ body {
   top: 1px;
   position: relative;
 }
-@media (max-width: 1370px) {
-  .container {
-    padding: 0 15px;
-    width: 1330px;
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
-  }
-}
 /* Typography
 	   ========================= */
 h1,
@@ -1551,4 +1551,25 @@ nav ul {
 }
 .text-right {
   text-align: center;
+}
+@media (max-width: 1670px) {
+  .topnav .container {
+    width: 1300px;
+    padding: 0 150px;
+  }
+  .topnav a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1370px) {
+  .header .header0 {
+    min-width: 1220px;
+  }
+  .topnav .container {
+    width: 1100px;
+    padding-left: 180px;
+  }
+  .topnav a {
+    font-size: 15px;
+  }
 }
