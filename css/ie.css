@@ -3,6 +3,7 @@
 }
 
 .btn-blue,
-.btn-orange {
+.btn-orange,
+.pagination li span {
 	filter: none;
 }

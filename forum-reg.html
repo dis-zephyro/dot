@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Школа бортпроводников - Форум - Главная</title>
+        <title>Школа бортпроводников - Форум - регистрация</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=1900">
 
@@ -46,8 +46,21 @@
                     <div class="clearfix">
                         <span class="hello">Здравствуйте, Иван Иванович!</span>
                     </div>
-
-                    <h2>Форумы «Школы бортпроводников»</h2>
+                    <h2>Регистрация</h2>
+                    <div class="login-box">
+                        <div class="form-login">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="E-mail">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Пароль">
+                            </div>
+                            <button type="submit" class="btn btn-blue">Войти</button>
+                        </div>
+                        <div class="text-right">
+                            <a href="#" class="forgot">Забыли пароль?</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -57,53 +70,46 @@
 
         <section class="forum">
             <div class="container">
-                <ul class="forum-partition">
-                    <li>
-                        <div class="forum-partition-title"><a href="#">Частые вопросы</a></div>
-                        <div class="forum-partition-body clearfix">
-                            <div class="forum-partition-text">
-                                Здесь Вы найдёте ответы на часто задаваемые вопросы... Если не нашли ответа на интересующий Вас вопрос, задайте свой вопрос в «Общем форуме», Вам обязательно ответят!
-                            </div>
-                            <div class="forum-partition-stats">
-                                <dl class="clearfix">
-                                    <dt><span>Темы</span></dt>
-                                    <dd><span>5</span></dd>
-                                </dl>
-                                <dl class="clearfix">
-                                    <dt><span>Сообщений</span></dt>
-                                    <dd><span>5</span></dd>
-                                </dl>
-                                <dl class="clearfix">
-                                    <dt><span>Последнее сообщение</span></dt>
-                                    <dd><span><a href="#">2007-01-22 11:32:05</a> > Administrator</span></dd>
-                                </dl>
+                <p>Если Вы хотите иметь возможность задавать вопросы и начинать новые темы, пожалуйста зарегистрируйтесь. Также регистрация предоставит вам доступ к дополнительным возможностям. Например, появится возможность редактировать и удалять свои сообщения, добавлять собственную подпись ко всем сообщениям, подписаться на уведомления о новых сообщениях на форуме. Если у вас есть какие-нибудь вопросы относительно этого форума, вы можете обратиться к администратору.</p>
+                <p>Ниже приведена форма, которую Вы должны заполнить для того, чтобы зарегистрироваться. После регистрации, Вы должны посетить свой профиль и просмотреть введенную информацию, которую Вы сможете отредактировать в случае необходимости. Поля, заполняемые ниже - это только небольшая часть всех возможностей, которые Вы сможете изменять в своем профиле.</p>
+                <div class="form-reg">
+                    <form class="form">
+                        <div class="form-group">
+                            <label>Ваше имя:</label>
+                            <input type="text" class="form-control" placeholder="Имечко">
+                        </div>
+                        <div class="form-group">
+                            <label>E-mail:</label>
+                            <input type="text" class="form-control" placeholder="Primer@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Мобильный:</label>
+                            <input type="text" class="form-control" placeholder="+7 (980) 900-00-00">
+                        </div>
+                        <div class="form-group">
+                            <label>Город:</label>
+                            <input type="text" class="form-control" placeholder="Москва">
+                        </div>
+                        <div class="form-group">
+                            <label>Пароль:</label>
+                            <input type="password" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Пароль:</label>
+                            <input type="password" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Введите код с картинки::</label>
+                            <input type="text" class="form-control form-captcha">
+                            <div class="img-captcha">
+                                <img class="img-responsive" src="img/captcha.png" alt="">
                             </div>
                         </div>
-                    </li>
-
-                    <li>
-                        <div class="forum-partition-title"><a href="#">Общий форум</a></div>
-                        <div class="forum-partition-body clearfix">
-                            <div class="forum-partition-text">
-                                Здесь Вы можете задавать вопросы и получать на них ответы, общаться, делиться мнениями, впечатлениями и т.д. и т.п. :) В связи с большой активностью спамеров, теперь для того, чтобы начать новую тему в этом форуме, необходима <a class="text-up" href="#">РЕГИСТРАЦИЯ!</a>
-                            </div>
-                            <div class="forum-partition-stats">
-                                <dl class="clearfix">
-                                    <dt><span>Темы</span></dt>
-                                    <dd><span>5</span></dd>
-                                </dl>
-                                <dl class="clearfix">
-                                    <dt><span>Сообщений</span></dt>
-                                    <dd><span>5</span></dd>
-                                </dl>
-                                <dl class="clearfix">
-                                    <dt><span>Последнее сообщение</span></dt>
-                                    <dd><span><a href="#">2007-01-22 11:32:05</a> > Administrator</span></dd>
-                                </dl>
-                            </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn-blue btn-xl">Сохранить</button>
                         </div>
-                    </li>
-                </ul>
+                    </form>
+                </div>
             </div>
         </section>
 
