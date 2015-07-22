@@ -11,10 +11,10 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
-        <link rel="stylesheet" href="css/main.css">
+        <!--link rel="stylesheet" href="css/main.css"-->
 
-        <!--link rel="stylesheet/less" href="less/main.less">
-        <script src="js/vendor/less.min.js"></script-->
+        <link rel="stylesheet/less" href="less/main.less">
+        <script src="js/vendor/less.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
         <!--[if gte IE 9]>
@@ -43,7 +43,10 @@
             </nav>
             <div class="page-title">
                 <div class="container">
-                    <div class="hello"><span>Здравствуйте, Иван Иванович!</span></div>
+                    <div class="clearfix">
+                        <span class="hello">Здравствуйте, Иван Иванович!</span>
+                    </div>
+
                     <h2>Форумы «Школы бортпроводников»</h2>
                 </div>
             </div>
@@ -54,7 +57,53 @@
 
         <section class="forum">
             <div class="container">
-                <a href="#" class="btn-blue btn-medium">Начать тестирование</a>
+                <ul class="forum-partition">
+                    <li>
+                        <div class="forum-partition-title"><a href="#">Частые вопросы</a></div>
+                        <div class="forum-partition-body clearfix">
+                            <div class="forum-partition-text">
+                                Здесь Вы найдёте ответы на часто задаваемые вопросы... Если не нашли ответа на интересующий Вас вопрос, задайте свой вопрос в «Общем форуме», Вам обязательно ответят!
+                            </div>
+                            <div class="forum-partition-stats">
+                                <dl class="clearfix">
+                                    <dt><span>Темы</span></dt>
+                                    <dd><span>5</span></dd>
+                                </dl>
+                                <dl class="clearfix">
+                                    <dt><span>Сообщений</span></dt>
+                                    <dd><span>5</span></dd>
+                                </dl>
+                                <dl class="clearfix">
+                                    <dt><span>Последнее сообщение</span></dt>
+                                    <dd><span><a href="#">2007-01-22 11:32:05</a> > Administrator</span></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="forum-partition-title"><a href="#">Общий форум</a></div>
+                        <div class="forum-partition-body clearfix">
+                            <div class="forum-partition-text">
+                                Здесь Вы можете задавать вопросы и получать на них ответы, общаться, делиться мнениями, впечатлениями и т.д. и т.п. :) В связи с большой активностью спамеров, теперь для того, чтобы начать новую тему в этом форуме, необходима <a class="text-up" href="#">РЕГИСТРАЦИЯ!</a>
+                            </div>
+                            <div class="forum-partition-stats">
+                                <dl class="clearfix">
+                                    <dt><span>Темы</span></dt>
+                                    <dd><span>5</span></dd>
+                                </dl>
+                                <dl class="clearfix">
+                                    <dt><span>Сообщений</span></dt>
+                                    <dd><span>5</span></dd>
+                                </dl>
+                                <dl class="clearfix">
+                                    <dt><span>Последнее сообщение</span></dt>
+                                    <dd><span><a href="#">2007-01-22 11:32:05</a> > Administrator</span></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
 

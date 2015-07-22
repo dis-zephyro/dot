@@ -78,7 +78,7 @@ section {
 
 	}
 
-	%.header-forum {
+	&.header-forum {
 	height: 210px;
 }
 
@@ -358,7 +358,7 @@ section {
 	}
 
 	.breadcrumbs {
-		width: 960px;
+		width: 800px;
 		margin: 0;
 		float: left;
 		list-style: none;
@@ -452,28 +452,24 @@ section {
 	}
 
 	.hello {
+		float: right;
 		color: #648ed6;
 		font-size: 15px;
 		line-height: 20px;
 		text-align: right;
-		padding-top: 15px;
-		padding-right: 20px;
+		padding: 20px 20px 10px 20px;
+		position: relative;
+		display: inline-block;
 
-		span {
-			padding-left: 21px;
-			position: relative;
-			display: inline-block;
-
-			&:before {
-				top: 5px;
-				left: 0;
-				width: 8px;
-				height: 8px;
-				content: " ";
-				position: absolute;
-				border: 3px solid #648ed6;
-				.border-radius(50%);
-			}
+		&:before {
+			top: 25px;
+			left: 0;
+			width: 8px;
+			height: 8px;
+			content: " ";
+			position: absolute;
+			border: 3px solid #648ed6;
+			.border-radius(50%);
 		}
 	}
 
@@ -1282,10 +1278,89 @@ section {
 	}
 }
 
+/* Forum  */
+
 .forum {
 	padding-top: 212px;
 }
 
+.forum-partition {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	> li {
+		background: #f9f9f9;
+		border-bottom: 1px solid #c0c5ce;
+
+		&:first-child {
+			border-top: 1px solid #c0c5ce;
+		}
+	}
+
+	.forum-partition-title {
+		height: 48px;
+		font-size: 21px;
+		padding: 0 5px;
+		line-height: 48px;
+		background: #e6edf9;
+
+		a {
+			color: #565250;
+			text-decoration: none;
+
+			&:hover {
+				color: #ff7e00;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.forum-partition-body {
+		display: table;
+		width: 100%;
+	}
+
+	.forum-partition-text {
+		width: 720px;
+		color: #323335;
+		font-size: 16px;
+		line-height: 22px;
+		padding: 15px 5px;
+		display: table-cell;
+		vertical-align: top;
+	}
+
+	.forum-partition-stats {
+		display: table-cell;
+		padding: 15px 5px 15px 0;
+		vertical-align: top;
+
+		dl {
+			padding: 0;
+			color: #838485;
+			font-size: 15px;
+			line-height: 15px;
+			list-style: none;
+			margin: 0 0 10px 0;
+			background: url("../img/stats-point.png") left bottom repeat-x;
+
+			dt {
+				float: left;
+				background: #f9f9f9;
+				display: inline-block;
+			}
+
+			dd {
+				float: right;
+				background: #f9f9f9;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+/* End of Forum */
 
 .divider {
 	width: 100%;
@@ -1815,9 +1890,12 @@ nav ul {
 	font-style: italic;
 }
 
-
 .text-right {
 	text-align: center;
 }
 
-@import url(redpond.less);
+.text-up {
+	text-transform: uppercase;
+}
+
+@import url('redpond.less');
