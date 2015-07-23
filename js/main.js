@@ -47,6 +47,11 @@ $(".teacher-link, .support-link").fancybox({
     "closeBtn" : false
 });
 
+$(".enter").fancybox({
+    "padding" : 0,
+    "closeBtn" : false
+});
+
 $('.btn-close').click(function(){
     $.fancybox.close();
 });

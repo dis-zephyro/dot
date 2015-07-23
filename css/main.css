@@ -91,7 +91,7 @@ textarea {
 html {
   font-size: 14px;
   min-height: 100%;
-  min-width: 1270px;
+  min-width: 1200px;
   line-height: 1.357;
   position: relative;
   overflow-x: hidden;
@@ -104,7 +104,7 @@ section {
 }
 .container {
   padding: 0 115px 0 15px;
-  width: 1330px;
+  width: 1200px;
   margin-right: auto;
   margin-left: auto;
   position: relative;
@@ -238,7 +238,7 @@ section {
   width: 100%;
   height: 100%;
   color: #6f6f6f;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 65px;
   position: relative;
   display: inline-block;
@@ -519,7 +519,7 @@ section {
 }
 .messages .message-list {
   float: left;
-  width: 840px;
+  width: 710px;
   position: relative;
   margin-left: 360px;
 }
@@ -530,7 +530,7 @@ section {
 .messages .message-list ul {
   padding: 0;
   list-style: none;
-  margin: 0 0 300px 0;
+  margin: 0 0 200px 0;
 }
 .messages .message-list ul li {
   width: 100%;
@@ -580,14 +580,14 @@ section {
 }
 .messages .message-form {
   z-index: 10;
-  width: 840px;
+  width: 710px;
   bottom: 0;
   background: #fff;
   position: fixed;
   padding-bottom: 30px;
 }
 .messages .message-form .form-control {
-  height: 155px;
+  height: 80px;
   width: 100%;
   outline: none;
   display: block;
@@ -704,7 +704,7 @@ section {
   border-bottom: none;
 }
 .courses-title {
-  padding-left: 170px;
+  padding-left: 60px;
 }
 .courses {
   padding-top: 210px;
@@ -873,7 +873,7 @@ section {
   background-position: 0 -36px;
 }
 .profile {
-  margin: 0 0 45px 190px;
+  margin: 0 0 45px 60px;
 }
 .profile h3 {
   color: #3b3c3c;
@@ -1148,6 +1148,9 @@ section {
 /* Forum  */
 .forum {
   padding-top: 212px;
+}
+.forum .container {
+  padding-right: 15px;
 }
 .pagination {
   padding: 0;
@@ -1506,10 +1509,7 @@ section {
   width: 121px;
 }
 .login-box {
-  top: 140px;
-  right: -180px;
   width: 280px;
-  position: absolute;
 }
 .login-box .form-login {
   text-align: center;
