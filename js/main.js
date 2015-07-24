@@ -62,7 +62,7 @@ $('.btn-close').click(function(){
 $('.test-button').click(function(event){
     event.preventDefault();
     $.jGrowl('Ваш комментарий будет размещен<br/>после модерации.', {
-        theme: 'Right',
-        life:6000
+        life:6000,
+        position: 'bottom-right'
     });
 });
