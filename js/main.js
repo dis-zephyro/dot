@@ -55,3 +55,14 @@ $(".enter").fancybox({
 $('.btn-close').click(function(){
     $.fancybox.close();
 });
+
+// Сообщения JGrowl -- http://plugindetector.com/ru/jgrowl
+// Плагин можно привязать к какому либо действию, например к ajax обработчику формы
+
+$('.test-button').click(function(event){
+    event.preventDefault();
+    $.jGrowl('Ваш комментарий будет размещен<br/>после модерации.', {
+        theme: 'Right',
+        life:6000
+    });
+});
