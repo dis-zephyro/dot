@@ -1435,25 +1435,63 @@ section {
 }
 .forum-post .post-form {
   background: #f0f0f0;
+}
+.forum-post .post-form .post-form-register {
   padding: 8px 214px 12px 214px;
   border-left: 1px solid #d1d1d1;
   border-right: 1px solid #d1d1d1;
 }
+.forum-post .post-form .post-form-unregister {
+  padding: 8px 30px 12px 30px;
+  border-left: 1px solid #d1d1d1;
+  border-right: 1px solid #d1d1d1;
+}
 .forum-post .post-form .form-control {
-  height: 90px;
   width: 100%;
   outline: none;
   display: block;
-  padding: 15px 10px;
-  margin-bottom: 8px;
+  padding: 10px 10px;
+  margin-bottom: 10px;
   border: 1px solid #b8b8b8;
   -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
   box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
 }
+.forum-post .post-form textarea {
+  height: 90px;
+}
+.forum-post .post-form label {
+  display: block;
+  text-align: left;
+  font-weight: 600;
+}
 .forum-post .post-form .btn-blue {
   padding-left: 105px;
   padding-right: 105px;
+}
+.forum-post .post-form .form-left {
+  width: 70%;
+  float: left;
+  padding-right: 20px;
+}
+.forum-post .post-form .form-right {
+  width: 30%;
+  float: left;
+  padding-left: 20px;
+}
+.forum-post .post-form .col50 {
+  width: 50%;
+  float: left;
+  padding: 0 10px;
+}
+.forum-post .post-form .form-group {
+  margin: 0 -10px;
+}
+.forum-post .post-form .captcha {
+  width: 302px;
+  height: 93px;
+  background: #fff;
+  margin: 18px auto 15px auto;
 }
 .form-reg {
   width: 570px;

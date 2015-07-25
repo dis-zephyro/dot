@@ -183,14 +183,25 @@
                     <tr>
                         <td colspan="2">
                             <form class="post-form text-center">
-                                <div class="post-form-register">
-                                    <textarea class="form-control" placeholder="Введите сообщение...."></textarea>
-                                    <button type="submit" class="btn btn-blue">отправить</button>
-                                    <!-- demo можно удалить -->
-                                    <div class="text-center">
-                                        <a href="#" class="test-button" style="margin-top: 10px">демонстрация всплывающего окна</a>
+                                <div class="post-form-unregister clearfix">
+                                    <div class="form-left">
+                                        <div class="form-group clearfix">
+                                            <div class="col50">
+                                                <label>*Вас зовут:</label>
+                                                <input type="text" class="form-control" placeholder="Вася Пупкин">
+                                            </div>
+                                            <div class="col50">
+                                                <label>*Ваш E-mail:</label>
+                                                <input type="text" class="form-control" placeholder="primer@gmail.com">
+                                            </div>
+                                        </div>
+                                        <textarea class="form-control" placeholder="Введите сообщение...."></textarea>
                                     </div>
-                                    <!-- end of demo-->
+                                    <div class="form-right">
+                                        <div class="captcha">
+                                        </div>
+                                        <button type="submit" class="btn btn-blue">отправить</button>
+                                    </div>
                                 </div>
                             </form>
                         </td>
