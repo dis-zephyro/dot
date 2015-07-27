@@ -618,7 +618,7 @@ section {
 .lesson .lesson-theme {
   z-index: 100;
   width: 300px;
-  top: 236px;
+  top: 255px;
   bottom: 55px;
   position: fixed;
   padding-left: 8px;
