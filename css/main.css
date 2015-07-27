@@ -814,6 +814,9 @@ section {
 .learning-block .learning-list li a:hover:before {
   background: #ff7800;
 }
+.learning-block .learning-list li .file {
+  padding-left: 10px;
+}
 .test-list {
   width: 800px;
   margin: 0 0 30px 190px;

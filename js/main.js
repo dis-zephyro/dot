@@ -3,8 +3,8 @@
 
 $(document).ready(function() {
 // Указываем переменные
-    var accordion_head = $('.lesson-theme-list li > a'),
-        accordion_body = $('.lesson-theme-list li > .sub-nav');
+    var accordion_head = $('.lesson-theme-list > li > a'),
+        accordion_body = $('.lesson-theme-list > li > .sub-nav');
 
 // Функция клика
     accordion_head.on('click', function(event) {
@@ -24,7 +24,6 @@ $(document).ready(function() {
         }
     });
 });
-
 
 /* Поле отправки файла */
 
