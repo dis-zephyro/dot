@@ -916,13 +916,30 @@ section {
 		width: 100%;
 		display: table;
 
-		span {
+		.test-name {
 			height: 51px;
 			padding: 5px 0 5px 55px;
 			display: table-cell;
 			position: relative;
 			vertical-align: middle;
 			background: url("../img/test-list-divider.png") 0 100% no-repeat;
+		}
+
+		.test-result {
+			width: 85px;
+			padding: 5px 0;
+			text-align: right;
+			display: table-cell;
+			vertical-align: middle;
+			text-transform: uppercase;
+
+			.valid {
+				color: #1cc405;
+			}
+
+			.invalid {
+				color: #c81414;
+			}
 		}
 
 		a {
@@ -1543,6 +1560,41 @@ section {
 			}
 		}
 
+	}
+
+	.post-quote-title {
+
+		th {
+			font-weight: normal;
+			background: #f0f0f0;
+		}
+
+		.reply-title {
+			float: left;
+		}
+
+		.reply-cancel {
+			float: right;
+			color: #ff7e00;
+			cursor: pointer;
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.post-quote {
+
+		td {
+			background: #f9e2cc;
+		}
+
+		th {
+			background: #f9e2cc;
+			border-bottom: 1px solid #d1d1d1;
+		}
 	}
 
 	.post-legend {
