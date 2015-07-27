@@ -421,9 +421,10 @@ section {
   position: absolute;
 }
 .page-title .materials .materials-source {
-  height: 155px;
   position: relative;
   background: #eaeaea;
+  text-align: left;
+  padding: 30px 0 20px 0;
   border: 1px solid #cdcece;
   -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.31);
   -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.31);
@@ -438,6 +439,21 @@ section {
   content: "";
   position: absolute;
   background: url("../img/materials-source-bg.png") 0 0 no-repeat;
+}
+.page-title .materials .materials-source ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.page-title .materials .materials-source li {
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0 20px;
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 10px;
+  overflow: hidden;
 }
 .page-title .hello {
   float: right;

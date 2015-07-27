@@ -427,9 +427,10 @@ section {
 		}
 
 		.materials-source {
-			height: 155px;
 			position: relative;
 			background: #eaeaea;
+			text-align: left;
+			padding: 30px 0 20px 0;
 			border: 1px solid #cdcece;
 			.box-shadow(0px 2px 3px 0px rgba(0, 0, 0, 0.31));
 
@@ -442,6 +443,24 @@ section {
 				content: "";
 				position: absolute;
 				background: url("../img/materials-source-bg.png") 0 0 no-repeat;
+			}
+
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+
+
+			li {
+				float: left;
+				width: 50%;
+				height: 30px;
+				padding: 0 20px;
+				font-size: 13px;
+				line-height: 15px;
+				margin-bottom: 10px;
+				overflow: hidden;
 			}
 		}
 	}
@@ -2378,4 +2397,4 @@ nav ul {
 }
 
 @import url('redpond.less');
-@import url('jgrowl/jgrowl');
+@import url('jgrowl/jgrowl.less');
