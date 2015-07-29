@@ -46,7 +46,7 @@ $(".teacher-link, .support-link").fancybox({
     "closeBtn" : false
 });
 
-$(".enter").fancybox({
+$(".enter, .forgot").fancybox({
     "padding" : 0,
     "closeBtn" : false
 });
