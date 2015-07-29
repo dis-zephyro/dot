@@ -68,7 +68,7 @@ section {
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 100;
+	z-index: 200;
 	height: 100px;
 	position: fixed;
 	background: url("../img/bg.jpg") top left no-repeat;
@@ -136,8 +136,6 @@ section {
 		}
 	}
 }
-
-
 
 .topnav {
 	width: 100%;
@@ -487,6 +485,17 @@ section {
 		}
 	}
 
+	&.forum-title {
+		top: 100px;
+		left: 0;
+		right: 0;
+		z-index: 100;
+		height: 140px;
+		position: fixed;
+		padding-top: 0;
+		margin-bottom: 0;
+		background: url("../img/bg.jpg") left -100px no-repeat;
+	}
 }
 
 .messages {
@@ -1310,6 +1319,7 @@ section {
 /* Forum  */
 
 .forum {
+	padding-top: 250px;
 
 	.container {
 		padding-right: 15px;
