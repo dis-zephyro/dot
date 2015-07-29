@@ -482,7 +482,7 @@ section {
   left: 0;
   right: 0;
   z-index: 100;
-  height: 140px;
+  height: 100px;
   position: fixed;
   padding-top: 0;
   margin-bottom: 0;
@@ -1183,7 +1183,7 @@ section {
 }
 /* Forum  */
 .forum.forum-fixed {
-  padding-top: 250px;
+  padding-top: 200px;
 }
 .forum .container {
   padding-right: 15px;
