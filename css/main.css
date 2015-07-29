@@ -1182,7 +1182,7 @@ section {
   border-radius: 50%;
 }
 /* Forum  */
-.forum {
+.forum.forum-fixed {
   padding-top: 250px;
 }
 .forum .container {
