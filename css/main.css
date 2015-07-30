@@ -555,11 +555,12 @@ section {
 }
 .messages .message-list ul {
   padding: 0;
+  width: 710px;
   list-style: none;
   margin: 0 0 200px 0;
 }
 .messages .message-list ul li {
-  width: 100%;
+  width: 710px;
   display: table;
   border-bottom: 1px solid #cccccc;
 }
@@ -595,11 +596,17 @@ section {
   margin-right: 5px;
 }
 .messages .message-list .message-text {
+  width: 470px;
   font-size: 15px;
   line-height: 20px;
   display: table-cell;
   vertical-align: top;
   padding: 9px;
+}
+.messages .message-list .message-text .message-text-inner {
+  width: 452px;
+  overflow: hidden;
+  white-space: normal;
 }
 .messages .message-list .message-text p {
   margin-bottom: 9px;
@@ -973,6 +980,12 @@ section {
   -webkit-box-shadow: inset 0px 1px 7px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: inset 0px 1px 7px 0px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 1px 7px 0px rgba(0, 0, 0, 0.3);
+}
+.profile .profile-image .profile-avatar > .empty-avatar {
+  height: 130px;
+  vertical-align: middle;
+  line-height: 130px;
+  text-align: center;
 }
 .profile .profile-image label {
   margin-bottom: 18px;

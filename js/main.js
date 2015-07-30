@@ -41,7 +41,7 @@ function getName (str){
 
 
 
-$(".teacher-link, .support-link").fancybox({
+$(".teacher-link, .support-link, .support_link_tag").fancybox({
     "padding" : 0,
     "closeBtn" : false
 });
